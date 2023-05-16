@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form_container">
+        <form action="" id="form">
+          <div class="first_name_container part">
+            <label for="firstname">First Name:</label>
+            <input
+              required
+              type="text"
+              maxlength="50"
+              name="firstname"
+              id="firstname"
+            />
+          </div>
+          <div class="last_name_container part">
+            <label for="lastname">Last Name:</label>
+            <input
+              required
+              type="text"
+              maxlength="50"
+              name="lastname"
+              id="lastname"
+            />
+          </div>
+          <div class="phone_container part">
+            <label for="phone">Phone Number:&nbsp;</label>
+            <input required type="tel" maxlength="20" name="phone" id="phone" />
+          </div>
+          <div class="email_container part">
+            <label for="email">Email:</label>
+            <input required type="email" name="email" id="email" />
+          </div>
+          <div class="country_container part">
+            <label for="country">State of Origin:</label>
+            <select name="country" class="select_input">
+              <option selected disabled value=""></option>
+              <option value="Abia">Abia</option>
+              <option value="Adamawa">Adamawa</option>
+              <option value="Akwa Ibom">Akwa Ibom</option>
+              <option value="Anambra">Anambra</option>
+              <option value="Anambra">Anambra</option>
+              <option value="Bauchi">Bauchi</option>
+            </select>
+          </div>
+          <div class="gender_container part">
+            <h5>Gender:</h5>
+            <label for="male">Male</label>
+            <input type="radio" value="Male" name="gender" id="male" />
+            <label for="female">Female</label>
+            <input type="radio" value="Female" name="gender" id="female" />
+            <label for="other">Other</label>
+            <input type="radio" value="Other" name="gender" id="other" />
+          </div>
+          <div class="submit_button">
+            <button class="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
